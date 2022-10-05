@@ -1,5 +1,5 @@
 # automacao-lojavirtual-robot-web
-Scripts de automação web em uma Loja Virtual desenvolvido com Python, Robot Framework e Selenium.
+Scripts de automação web em uma Loja Virtual desenvolvido com Robot Framework e Selenium.
 
 ### Cobertura dos testes:  ###
 
@@ -16,13 +16,14 @@ Scripts de automação web em uma Loja Virtual desenvolvido com Python, Robot Fr
 * SeleniumLibrary
 * Python 3
 * Utilize o pip install para instalar via terminal os drivers dos navegadores.
+* Robot Code(Extensão do VS Code, mas pode utilizar outra compativel com o Robot)
 
 ## Instruções de execução:
 
 ###  - Plataforma
 *Importante:
 
-O projeto foi criado para executar no MacOS. Mas pode receber adaptacoes para executar no Windows e Linux caso nao execute bem fora do MacOS.
+O projeto pode ser executado no Windows, Mac OS e Linux.
 
 Recomendado utilizar o Visual Studio Code.
 
@@ -42,7 +43,7 @@ Inserir as massas para teste na classe massas.robot em Resource/data.
 
 Abrir o Terminal do Visual Studio Code.
 
-O webdriver deve ficar na pasta drivers, este projeto esta setado apenas para o Chrome no Mac OS e no Windows. Nao esqueca de verificar tambem a versao do navegador e baixar os webdrivers para os outros navegadores.
+Este projeto esta setado apenas para o Chrome no Mac OS e no Windows. Nao esqueca de verificar tambem a versao do navegador e baixar os webdrivers para os outros navegadores.
 
 1. Executar o Robot.
 
