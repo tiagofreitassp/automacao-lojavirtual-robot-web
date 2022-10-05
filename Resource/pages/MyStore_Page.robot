@@ -15,39 +15,44 @@ EscolherCategoria
 
 EscolherProduto
     ScrollToElement ${var.imgFadedShortSleeveTshirts}
+    ClicarNoElemento ${var.imgFadedShortSleeveTshirtsQuickView}
+    Esperar ${4}
     SwitchToFrame ${var.iFrame_FadedShortSleeveTshirts}
-    VerificarElementoVisivel ${var.txtFadedShortSleeveTshirts}
+    AguardarElementoFicarVisivel ${var.txtFadedShortSleeveTshirts}
+    Esperar ${2}
 
 Etapa1_AdcionarAoCarrinho
-    ClicarNoElemento ${var.labelWomen}
+    ClicarNoElemento ${var.botaoAddToCart}
+    Esperar ${5}
     VoltarAoFramePrincipal
+    Esperar ${2}
     ClicarNoElemento ${var.botaoProceedToCheckout}
 
 Etapa2_Summary
-    VerificarElementoVisivel ${var.txtShoppingCartSummary}
+    ClicarNoElemento ${var.txtShoppingCartSummary}
     Esperar ${3}
     ScrollToElement ${var.botaoSHOPPINGCARTSUMMARY_ProceedToCheckout}
     ClicarNoElemento ${var.botaoSHOPPINGCARTSUMMARY_ProceedToCheckout}
 
 Etapa3_Address
-    VerificarElementoVisivel ${var.txtAddress}
-    Esperar ${6}
+    AguardarElementoFicarVisivel ${var.txtAddress}
     ScrollToElement ${var.botaoAddress_ProceedToCheckout}
     ClicarNoElemento ${var.botaoAddress_ProceedToCheckout}
 
 Etapa4_Shipping
-    VerificarElementoVisivel ${var.txtShipping}
-    ClicarNoElemento ${var.checkboxTermOfService}
-    Esperar ${5}
-    ClicarNoElemento ${var.botaoShipping_ProceedToCheckout?
+    AguardarElementoFicarVisivel ${var.txtShipping}
+    Esperar ${4}
+    ClicarNoElemento ${var.txtIagreeToTheTermsOfService}
+    Esperar ${2}
+    ClicarNoElemento ${var.botaoShipping_ProceedToCheckout}
 
 Etapa5_Payment
-    VerificarElementoVisivel ${var.txtPleaseChooseYourPaymentMethod}
+    AguardarElementoFicarVisivel ${var.txtPleaseChooseYourPaymentMethod}
     ScrollToElement ${var.botaoPayByBankWire}
     ClicarNoElemento ${var.botaoPayByBankWire}
-    VerificarElementoVisivel ${var.txtOrderSummary}
+    ScrollToElement ${var.txtOrderSummary}
     ClicarNoElemento ${var.botaoIconfirmMyOrder}
-    VerificarElementoVisivel ${var.txtOrderConfirmation}
+    ScrollToElement ${var.txtOrderConfirmation}
     Esperar ${2}
 
 Deslogar

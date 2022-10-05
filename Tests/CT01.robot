@@ -9,3 +9,4 @@ Cenario CT01: Realizar uma compra com sucesso
     Dado que efetuei a autenticacao de usuario
     Quando escolhar um produto e concluir a compra
     Entao a compra e finalizada com sucesso
+    

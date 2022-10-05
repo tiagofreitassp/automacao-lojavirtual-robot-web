@@ -5,7 +5,7 @@ Resource    ../../Elements/Main_Elements.resource
 *** Keywords ***
 
 AguardarElementoFicarVisivel ${elemento}
-    Wait Until Element Is Visible  ${elemento}      15
+    Wait Until Element Is Visible  ${elemento}      8
 
 VerificarElementoVisivel ${elemento}
     Element Should Be Visible     ${elemento}
@@ -29,7 +29,7 @@ Esperar ${t}
 SwitchToFrame ${elemento}
     Sleep    1s
     Select Frame   ${elemento}
-    Sleep    1s
+    Sleep    2s
 
 VoltarAoFramePrincipal
     Unselect Frame
