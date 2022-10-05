@@ -1,5 +1,5 @@
 # automacao-lojavirtual-robot-web
-Scripts de automação web em uma Loja Virtual desenvolvido com Python, Unittest e Selenium.
+Scripts de automação web em uma Loja Virtual desenvolvido com Python, Robot Framework e Selenium.
 
 ### Cobertura dos testes:  ###
 
