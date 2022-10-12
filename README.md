@@ -47,15 +47,15 @@ Este projeto esta setado apenas para o Chrome no Mac OS e no Windows. Nao esquec
 
 1. Executar o Robot.
 
-robot bdd.robot
+robot Tests/CT01.robot
 
 2. Executar o Robot mas escolhendo onde salvar os logs/resultados.
 
-robot -d Results bdd.robot
+robot -d Results Tests/CT01.robot
 
 3. Executar um cenario especifico.
 
-robot -d Results -t "Cenário 2: Executar outro vídeo no Youtube" bdd.robot
+robot -d Results -t "Cenário 2: Executar outro vídeo no Youtube" Tests/CT01.robot
 
 4. Executar todos os cenarios.
 
@@ -64,4 +64,4 @@ robot -d Results Tests
 5. Executar cenarios com determinada tag.
 
 robot -d Results -i regressivo Tests
-robot -d Results Tests/bdd.robot
+robot -d Results Tests/CT01.robot
