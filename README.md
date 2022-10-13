@@ -1,11 +1,13 @@
 # automacao-lojavirtual-robot-web
+
 Scripts de automação web em uma Loja Virtual desenvolvido com Robot Framework e Selenium.
 
-### Cobertura dos testes:  ###
+### Cobertura dos testes:
 
 * Realizar compra online
 
 ## Tecnologias:
+
 * [Robot Framework](https://robotframework.org/)
 * [Python 3.9+](https://www.python.org/)
 * [Selenium](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
@@ -13,6 +15,7 @@ Scripts de automação web em uma Loja Virtual desenvolvido com Robot Framework 
 * [PyPI](https://pypi.org/project/selenium/)
 
 ## Dependências:
+
 * SeleniumLibrary
 * Python 3
 * Utilize o pip install para instalar via terminal os drivers dos navegadores.
@@ -20,23 +23,27 @@ Scripts de automação web em uma Loja Virtual desenvolvido com Robot Framework 
 
 ## Instruções de execução:
 
-###  - Plataforma
+### - Plataforma
+
 *Importante:
 
 O projeto pode ser executado no Windows, Mac OS e Linux.
 
 Recomendado utilizar o Visual Studio Code.
 
-###  - Fluxo
+### - Fluxo
+
 *Descricao: Este script ira executar uma compra online, seguindo o fluxo desde a escolha do produto ate a etapa de confirmacao da compra.
 
-###  - Massas
-*Descricao: 
+### - Massas
+
+*Descricao:
 Apos a execucao, os relatórios sao armazenadas na pasta Results.
 
 Antes de executar nao esqueca de trocar as massas por uma adequada. Nao ha problema em usar a massa disponivel na feature desde que verifique antes se o site nao apagou do banco de dados.
 
-###  - Inicializar a automação
+### - Inicializar a automação
+
 *Descricao:
 
 Inserir as massas para teste na classe massas.robot em Resource/data.
@@ -65,3 +72,8 @@ robot -d Results Tests
 
 robot -d Results -i regressivo Tests
 robot -d Results Tests/CT01.robot
+
+6. Executar em modo headless.
+
+robot -d Results -v BROWSER:headlesschrome Tests/CT01.robot
+robot -d Results -v BROWSER:headlessfirefox Tests/CT01.robot
