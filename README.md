@@ -71,9 +71,9 @@ robot -d Results Tests
 5. Executar cenarios com determinada tag.
 
 robot -d Results -i regressivo Tests
-robot -d Results Tests/CT01.robot
 
 6. Executar em modo headless.
 
 robot -d Results -v BROWSER:headlesschrome Tests/CT01.robot
+
 robot -d Results -v BROWSER:headlessfirefox Tests/CT01.robot
