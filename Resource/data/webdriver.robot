@@ -4,5 +4,5 @@ Resource    ../Main.robot
 *** Variables ***
 #Dados gerais
 &{driver}
-...    URL=http://automationpractice.com/index.php?
+...    URL=http://www.automationpractice.pl/index.php
 ...    Browser=chrome
